@@ -1,4 +1,4 @@
-s# 🍪 Enhanced GDPR Cookie Consent
+🍪 Enhanced GDPR Cookie Consent
 
 > **Zero dependencies** • **15KB total** • **GDPR compliant** • **Auto-blocking scripts** • **Production ready**
 
@@ -347,8 +347,9 @@ EnhancedCookieConsent.init({
 
 ## 🏗️ Development
 
-### File Structure
+## 📁 File Structure
 
+```bash
 gdpr-cookie-consent/
 ├── dist/                     # Production-ready CSS/JS builds
 │   ├── cookie-consent.css
@@ -360,7 +361,7 @@ gdpr-cookie-consent/
 │   ├── ab-test-demo.html     # A/B testing variant
 │   └── minimal-demo.html     # Minimal variant demo
 │
-├── examples/                 # Integration examples
+├── examples/                 
 │   ├── frameworks/           # Framework-specific implementations
 │   │   ├── react-example.jsx
 │   │   ├── vue-example.vue
@@ -377,6 +378,8 @@ gdpr-cookie-consent/
 ├── package.json              # Project metadata and npm config
 ├── README.md                 # Project documentation
 └── LICENSE                   # MIT license
+                  # MIT license
+```
 
 
 ### Build Commands
