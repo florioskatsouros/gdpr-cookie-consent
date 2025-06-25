@@ -699,7 +699,7 @@
                 <button class="cookie-btn cookie-btn-reject" onclick="EnhancedCookieConsent.rejectAll(); hideCookieSettings();">
                     Reject All
                 </button>
-                <button class="cookie-btn cookie-btn-accept" onclick="EnhancedCookieConsent.savePreferences(); hideCookieSettings();">
+                <button class="cookie-btn cookie-btn-accept" onclick="EnhancedCookieConsent.savePreferences(); hideCookieSettings(); EnhancedCookieConsent.hideBanner();">
                     Save Preferences
                 </button>
             </div>
@@ -1171,6 +1171,7 @@
                 });
                 
                 this.updateUI();
+                this.showBanner();
             }
 
             static switchVariant() {
@@ -1236,8 +1237,8 @@
         }
 
         function forceShowBanner() {
-            EnhancedCookieConsent.reset();
             EnhancedCookieConsent.showBanner();
+            EnhancedCookieConsent.updateUI();
         }
 
         function testGeolocation() {
