@@ -3,7 +3,6 @@
 # 🍪 Enhanced GDPR Cookie Consent
 
 [![Free Alternative](https://img.shields.io/badge/🆓%20FREE%20Alternative%20to-Cookiebot%20%26%20OneTrust-brightgreen?style=for-the-badge)](https://github.com/florioskatsouros/gdpr-cookie-consent)
-[![GitHub Downloads](https://img.shields.io/github/downloads/florioskatsouros/gdpr-cookie-consent/total?style=for-the-badge&color=success&label=DOWNLOADS)](https://github.com/florioskatsouros/gdpr-cookie-consent/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/florioskatsouros/gdpr-cookie-consent?style=for-the-badge&color=yellow&label=STARS)](https://github.com/florioskatsouros/gdpr-cookie-consent/stargazers)
 
 [![Bundle Size](https://img.shields.io/badge/BUNDLE%20SIZE-15KB-brightgreen?style=for-the-badge)](https://github.com/florioskatsouros/gdpr-cookie-consent)
