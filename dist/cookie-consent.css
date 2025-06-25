@@ -1,0 +1,309 @@
+/* Enhanced GDPR Cookie Consent Banner - Standalone CSS */
+/* Version: 2.0.0 */
+
+/* Cookie Banner Styles */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
+    z-index: 10000;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-banner[data-variant="minimal"] {
+    padding: 15px;
+    background: rgba(44, 62, 80, 0.95);
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cookie-banner-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.cookie-banner h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+.cookie-banner p {
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.cookie-banner a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.cookie-banner a:hover {
+    text-decoration: underline;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 100px;
+    font-size: 14px;
+}
+
+.cookie-btn:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.cookie-btn-accept {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    color: white;
+}
+
+.cookie-btn-accept:hover {
+    background: linear-gradient(135deg, #229954 0%, #27ae60 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+}
+
+.cookie-btn-reject {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+}
+
+.cookie-btn-reject:hover {
+    background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+
+.cookie-btn-settings {
+    background: transparent;
+    color: #bdc3c7;
+    border: 2px solid #bdc3c7;
+}
+
+.cookie-btn-settings:hover {
+    background: #bdc3c7;
+    color: #2c3e50;
+    transform: translateY(-2px);
+}
+
+/* Enhanced Settings Modal */
+.cookie-settings-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 10001;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.cookie-settings-modal {
+    background: white;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.cookie-settings-header {
+    padding: 25px;
+    border-bottom: 1px solid #eee;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.cookie-settings-header h3 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.cookie-settings-body {
+    padding: 25px;
+}
+
+.cookie-category {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.cookie-category:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.cookie-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cookie-category h4 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.cookie-category p {
+    margin: 0 0 10px 0;
+    color: #6c757d;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.cookie-examples {
+    font-size: 0.8em;
+    color: #95a5a6;
+    font-style: italic;
+}
+
+.cookie-toggle {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cookie-toggle.enabled {
+    background: #27ae60;
+}
+
+.cookie-toggle.disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+.cookie-toggle::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.cookie-toggle.enabled::after {
+    transform: translateX(25px);
+}
+
+.cookie-settings-footer {
+    padding: 20px 25px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    background: #f8f9fa;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Enhanced Mobile Responsive */
+@media (max-width: 768px) {
+    .cookie-banner {
+        max-height: 70vh;
+        overflow-y: auto;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .cookie-banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cookie-banner-actions {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cookie-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+/* Loading indicator */
+.cookie-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Geolocation status */
+.geo-status {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.geo-eu { background: #e8f5e8; color: #2d5a2d; }
+.geo-other { background: #fff3cd; color: #856404; }

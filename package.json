@@ -1,0 +1,92 @@
+{
+  "name": "gdpr-banner-florios",
+  "version": "2.0.0",
+  "description": "🍪 Enhanced GDPR Cookie Consent Banner with auto-blocking, cookie scanning, and smart features. Zero dependencies, 15kb, production-ready.",
+  "main": "dist/cookie-consent.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "mkdir -p dist && cp src/cookie-consent.css dist/cookie-consent.css",
+    "build:js": "mkdir -p dist && cp src/cookie-consent.js dist/cookie-consent.js",
+    "minify": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o dist/cookie-consent.min.css src/cookie-consent.css",
+    "minify:js": "terser src/cookie-consent.js -o dist/cookie-consent.min.js --compress --mangle --comments false",
+    "dev": "live-server examples/",
+    "serve": "live-server --port=8080 --open=examples/",
+    "test": "echo \"Tests coming soon\" && exit 0",
+    "lint": "echo \"Linting coming soon\"",
+    "prepare": "npm run build && npm run minify",
+    "clean": "rm -rf dist/",
+    "prebuild": "npm run clean"
+  },
+  "keywords": [
+    "gdpr",
+    "cookie",
+    "consent",
+    "banner",
+    "privacy",
+    "javascript",
+    "css",
+    "vanilla",
+    "lightweight",
+    "auto-blocking",
+    "cookie-scanner",
+    "accessibility",
+    "responsive",
+    "ccpa",
+    "compliance",
+    "european-law",
+    "web-development",
+    "frontend",
+    "cookie-banner",
+    "cookie-consent",
+    "gdpr-compliance",
+    "privacy-policy",
+    "script-blocking"
+  ],
+  "author": {
+    "name": "Florios Katsouros",
+    "email": "florios@example.com",
+    "url": "https://github.com/florioskatsouros"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florioskatsouros/gdpr-cookie-consent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/florioskatsouros/gdpr-cookie-consent/issues"
+  },
+  "homepage": "https://florioskatsouros.github.io/gdpr-cookie-consent/",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.2",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead",
+    "not ie 11"
+  ],
+  "jsdelivr": "dist/cookie-consent.min.js",
+  "unpkg": "dist/cookie-consent.min.js",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/florioskatsouros"
+  },
+  "config": {
+    "port": 8080
+  }
+}
