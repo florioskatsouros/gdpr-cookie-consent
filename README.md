@@ -390,15 +390,6 @@ npm run minify       # Create minified versions
 npm run dev          # Start development server
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Here's how to get started:
-
-1. **Fork** the repository
-2. **Create** your feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
 
 ### Development Guidelines
 - Keep it lightweight (current bundle: ~15KB)
@@ -407,38 +398,6 @@ We welcome contributions! Here's how to get started:
 - Follow accessibility standards
 - Add tests for new features
 
-## 📋 Roadmap
-
-### v2.1 (Coming Soon)
-- [ ] TypeScript definitions
-- [ ] More banner variants (corner, top bar)
-- [ ] Advanced consent analytics
-- [ ] Consent management dashboard
-
-### v2.2 (Future)
-- [ ] Multi-language support
-- [ ] Server-side consent validation
-- [ ] Advanced A/B testing features
-- [ ] Integration with popular CMSs
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Q: Banner doesn't appear**
-- Ensure the banner HTML is properly added to your page
-- Check console for JavaScript errors
-- Call `EnhancedCookieConsent.reset()` to clear existing consent
-
-**Q: Scripts still loading without consent**
-- Ensure `autoBlockScripts` is `true`
-- Check that scripts are in the blocked scripts list
-- Verify scripts are loaded after consent events
-
-**Q: Styling issues**
-- Check CSS file is loaded correctly
-- Ensure no CSS conflicts with existing styles
-- Use browser dev tools to inspect elements
 
 ### Testing Your Implementation
 
