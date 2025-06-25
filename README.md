@@ -4,10 +4,6 @@ s# 🍪 Enhanced GDPR Cookie Consent
 
 A lightweight, intelligent, and GDPR-compliant cookie consent solution with advanced features that actually works out of the box.
 
-[![Live Demo](https://img.shields.io/badge/🎯_Try_Live_Demo-brightgreen?style=for-the-badge)](https://florioskatsouros.github.io/gdpr-cookie-consent/)
-[![NPM Version](https://img.shields.io/npm/v/gdpr-banner-florios?style=for-the-badge)](https://www.npmjs.com/package/gdpr-banner-florios)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Downloads](https://img.shields.io/npm/dm/gdpr-banner-florios?style=for-the-badge)](https://www.npmjs.com/package/gdpr-banner-florios)
 
 ## 🚀 Why Choose This?
 
